@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="needit" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="when needed" mandatory="true" max_length="40" name="u_glide_date_time_2" type="glide_date_time"/>
+        <element label="requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="requested_type" mandatory="true" max_length="40" name="u_string_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="human resource" sequence="0" value="human resource"/>
+                <element inactive_on_update="false" label="facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="legalfacilities" sequence="2" value="legalfacilities"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="what needed" max_length="40" name="u_string_5" type="string">
+            <choice>
+                <element inactive_on_update="false" label="hr1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="hr2" sequence="1" value="hr2"/>
+                <element inactive_on_update="false" label="legal1" sequence="2" value="legal1"/>
+                <element inactive_on_update="false" label="legal2" sequence="3" value="legal2"/>
+                <element inactive_on_update="false" label="other department1" sequence="4" value="other department1"/>
+                <element inactive_on_update="false" label="other department2" sequence="5" value="other department2"/>
+            </choice>
+        </element>
+    </element>
+</database>
